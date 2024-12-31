@@ -22,13 +22,19 @@
 </div>
 </div>
 
+<br/>
 
-
+<div align="center">
+    <a href="https://github.com/melgoharyme/CoursesAppMaui">
+    <img src="/Resources/Images/screenshot.png" alt="Logo">
+  </a>
+</div>
 
 <!-- ABOUT THE PROJECT -->
 ## 🤔 What is LearnPro?
 
 LearnPro is a cross-platform app built using .NET 9 MAUI, designed to allow users to securely access courses with a valid license code. The app uses static data to provide a fast and seamless experience across platforms.
+
 
 ## 🔍 Features
 
