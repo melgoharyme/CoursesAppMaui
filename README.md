@@ -83,7 +83,7 @@ To run LearnPro on your local machine:
 <!-- LICENSE -->
 ## 📝 License
 
-Distributed under the Unlicense License. See `LICENSE.txt` for more information.
+Distributed under the Unlicense License. See [`LICENSE`](https://github.com/melgoharyme/CoursesAppMaui/tree/master/LICENSE) for more information.
 
 
 <!-- CONTACT -->
