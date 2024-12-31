@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="LearnPro.HomePage"
+             Title="Home">
+
+    <ScrollView>
+        <Grid Padding="10" ColumnSpacing="10" RowSpacing="10">
+            <CollectionView x:Name="CoursesCollectionView" ItemsSource="{Binding Courses}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Span="2" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Stroke="Gray" StrokeThickness="1" Padding="10" Margin="5">
+                            <StackLayout Spacing="10">
+                                <Image Source="{Binding Image}" HeightRequest="92" Aspect="AspectFill" />
+                                <Label Text="{Binding Title}" FontSize="Medium" FontAttributes="Bold" />
+                                <Label Text="{Binding Category}" FontSize="Small" TextColor="Gray" />
+                                <Label Text="{Binding DatePublished}" FontSize="Small" TextColor="Gray" />
+                                <Button Text="View" Clicked="OnViewCourseClicked" CommandParameter="{Binding Id}" />
+                            </StackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ScrollView>
+</ContentPage>

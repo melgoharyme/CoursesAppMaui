@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnPro.CourseDetailPage"
+             Title="{Binding Title}">
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="16">
+            <!-- Display course title -->
+            <Image Source="{Binding Image}" HeightRequest="200" Aspect="AspectFill" />
+            <Label Text="{Binding Title}" FontSize="Large" FontAttributes="Bold" />
+            <Label Text="{Binding Category}" FontSize="Medium" TextColor="Gray" />
+            <Label Text="{Binding DatePublished}" FontSize="Small" TextColor="Gray" />
+
+            <!-- Dynamically display course sections -->
+            <CollectionView ItemsSource="{Binding CourseSection}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+
+                            <!-- Section title -->
+                            <Label Text="{Binding Name}" Margin="0,24,0,4" FontSize="Medium" FontAttributes="Bold" />
+
+                            <!-- Dynamically display lectures within each section -->
+                            <CollectionView ItemsSource="{Binding CourseSectionLectures}" IsVisible="{Binding IsExpanded}">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border StrokeThickness="1" Stroke="#d3d3d3" Padding="8" Margin="0,8">
+                                            <VerticalStackLayout>
+                                                <HorizontalStackLayout Spacing="8">
+
+                                                    <!-- Play Button (SVG) -->
+                                                    <Button ImageSource="play.svg"  HeightRequest="24"
+                                                    Clicked="OnWatchVideoClicked" 
+                                                    CommandParameter="{Binding}" 
+                                                    HorizontalOptions="Center" 
+                                                    VerticalOptions="End" />
+                                                    
+
+                                                    <!-- Title and Description (Text) -->
+                                                    <StackLayout VerticalOptions="Center">
+                                                        <Label Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" LineBreakMode="WordWrap" 
+       MaxLines="3"       HorizontalOptions="FillAndExpand"
+       VerticalOptions="StartAndExpand"/>
+                                                        <Label Text="{Binding Detail}" FontSize="Small" TextColor="Gray" />
+                                                    </StackLayout>
+                                                </HorizontalStackLayout>
+
+
+                                            </VerticalStackLayout>
+                                        </Border>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnPro.MainPage"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="24"
+            Spacing="16" VerticalOptions="CenterAndExpand">
+            <Image Source="{AppThemeBinding Light=logo.svg, Dark=logo_dark.svg}" 
+               WidthRequest="120" />
+
+            <Label Text="Welcome to LearnPro"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Please enter your license code to get started with the course content."
+                   FontSize="16"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="Gray"/>
+
+            <Entry x:Name="LicenseCodeEntry"
+                   Placeholder="Enter your license code here"
+                   Keyboard="Default"
+                   HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Activate License"
+                    Clicked="OnSubmitButtonClicked"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <!-- Additional Information -->
+            <Label Text="Not sure where to find the code? Contact support or check your email."
+                   FontSize="14"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="Gray"
+                   Padding="10"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

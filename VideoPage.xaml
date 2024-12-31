@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="LearnPro.VideoPage"
+             Title="{Binding Name}">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="16">
+            <!-- Video Title -->
+
+            <toolkit:MediaElement ShouldAutoPlay="True"
+                                  ShouldShowPlaybackControls="True"
+                                  Source="{Binding VideoUrl}"
+                                  HeightRequest="240"
+                                  HorizontalOptions="Fill" />
+            <VerticalStackLayout Padding="16" Spacing="8">
+                <Label Text="{Binding Name}" FontSize="Large" FontAttributes="Bold" />
+                <Label Text="{Binding Detail}" FontSize="Small" TextColor="Gray"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
