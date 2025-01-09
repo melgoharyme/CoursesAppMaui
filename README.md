@@ -52,18 +52,6 @@ We welcome contributions! Here’s how you can get involved:
 - **Feature Requests**: Share any ideas for new features or enhancements.
 - **Translations**: Help make LearnPro more accessible by contributing translations.
 
-## ⌨ Code Style Guidelines
-
-Please follow these guidelines to maintain code consistency:
-
-- Use **camelCase** for variables and function parameters.
-- Use **PascalCase** for classes, functions, and properties.
-- Add **comments** for complex or unclear code.
-- Avoid code duplication; create reusable functions.
-- Always use **brackets** for loops, conditionals, and control structures.
-- Place **return statements** on a new line.
-- Use **single-line namespaces** where possible (remove brackets and add a semicolon).
-- Limit **nesting** to no more than 3 levels.
 
 ## 🚀 Running Locally
 
@@ -84,14 +72,6 @@ To run LearnPro on your local machine:
 ## 📝 License
 
 Distributed under the Unlicense License. See [`LICENSE`](https://github.com/melgoharyme/CoursesAppMaui/tree/master/LICENSE) for more information.
-
-
-<!-- CONTACT -->
-## 📞 Contact
-
-Mahmoud Elgohary - [@melgoharyme](https://twitter.com/melgoharyme) - hello@melgohary.me
-
-Project Link: [https://github.com/melgoharyme/CoursesAppMaui](https://github.com/melgoharyme/CoursesAppMaui)
 
 
 <!-- ACKNOWLEDGMENTS -->
