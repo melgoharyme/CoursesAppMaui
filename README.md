@@ -43,15 +43,6 @@ LearnPro is a cross-platform app built using .NET 9 MAUI, designed to allow user
 - **Static course data**: Pre-loaded content for quick access, even offline.
 - **Secure content**: Only authorized users can access the materials.
 
-## 👨‍👩‍👧‍👦 Contribute to LearnPro
-
-We welcome contributions! Here’s how you can get involved:
-
-- **Code Contributions**: Fork the repository, improve features, or fix issues. Submit a pull request for review.
-- **Bug Reports**: If you encounter any issues, report them on GitHub.
-- **Feature Requests**: Share any ideas for new features or enhancements.
-- **Translations**: Help make LearnPro more accessible by contributing translations.
-
 
 ## 🚀 Running Locally
 
