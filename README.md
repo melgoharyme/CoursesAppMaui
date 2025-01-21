@@ -8,11 +8,13 @@
   <p align="center">
     A multi-platform, license-based courses app built with .NET 9 MAUI.
   </p>
+  <!--
   <p align="center">
     <a href="https://github.com/melgoharyme/CoursesAppMaui">View Demo</a> · 
     <a href="https://github.com/melgoharyme/CoursesAppMaui/issues/new?template=bug-report-🐞.md">Report Bug</a> · 
     <a href="https://github.com/melgoharyme/CoursesAppMaui/issues/new?template=feature-request-🚀.md">Request Feature</a>
-  </p>
+  </p> -->
+  <!--
   <div align="center">
   <img src="https://img.shields.io/github/repo-size/melgoharyme/CoursesAppMaui?style=for-the-badge" alt="GitHub repo size">
   <img src="https://img.shields.io/github/languages/count/melgoharyme/CoursesAppMaui?style=for-the-badge" alt="GitHub language count">
@@ -20,6 +22,7 @@
   <img src="https://img.shields.io/bitbucket/issues/melgoharyme/CoursesAppMaui?style=for-the-badge" alt="Bitbucket open issues">
   <img src="https://img.shields.io/bitbucket/pr-raw/melgoharyme/CoursesAppMaui?style=for-the-badge" alt="Bitbucket open pull requests">
 </div>
+-->
 </div>
 
 <br/>
